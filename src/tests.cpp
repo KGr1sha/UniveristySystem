@@ -1,8 +1,6 @@
 #include <iostream>
 #include "assert.h"
-#include "student.h"
-#include "teacher.h"
-#include "journal.h"
+#include "university_system.h"
 
 bool test(size_t test_id) {
     switch (test_id) {
