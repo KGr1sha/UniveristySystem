@@ -9,15 +9,19 @@
 
 class UniversitySystem {
 public:
-    void AddStudent(const Student&);
-    void AddTeacher(const Teacher&);
-    void AddCourse(const Course&);
-    Student GetStudent(size_t id);
-    Teacher GetTeacher(size_t id);
-    Course GetCourse(size_t id);
+    UniversitySystem(const Journal& journal, const Schedule& schedule);
+
+    void AddStudent(Student&);
+    void AddTeacher(Teacher&);
+    void AddCourse(Course&);
+
+    Student GetStudent(size_t id) const;
+    Teacher GetTeacher(size_t id) const;
+    Course GetCourse(size_t id) const;
 private:
     Journal journal;
     Schedule schedule;
+
     unordered_map<size_t, Course> courses;
     unordered_map<size_t, Student> students;
     unordered_map<size_t, Teacher> teachers;

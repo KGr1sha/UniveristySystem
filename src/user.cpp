@@ -21,3 +21,7 @@ size_t User::GetId() const {
 string User::GetName() const {
     return first_name + " " + secont_name + " " + last_name;
 }
+
+void User::SetId(size_t new_id) {
+    id = new_id;
+}

@@ -15,3 +15,11 @@ Student::Student(
 string Student::GetGroup() const {
     return group;
 }
+
+size_t Student::GetId() const {
+    return id;
+}
+
+void Student::SetId(size_t new_id) {
+    id = new_id;
+}

@@ -10,6 +10,7 @@ public:
     User(size_t id, string first_name, string second_name, string last_name);
     size_t GetId() const;
     string GetName() const;
+    void SetId(size_t new_id);
 
 protected:
     size_t id;

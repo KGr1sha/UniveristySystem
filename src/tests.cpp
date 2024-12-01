@@ -18,18 +18,6 @@ bool test(size_t test_id) {
         break;
 
         case 3: {
-        }
-        break;
-        case 4: {
-        }
-        break;
-        case 5: {
-        }
-        break;
-        case 6: {
-        }
-        break;
-        case 7: {
             Student s1(0, "A", "B", "C", "BOBA");
             Timestamp ts {
                 2024, 11, 1, 19, 12, 0
@@ -41,6 +29,22 @@ bool test(size_t test_id) {
             assert(entries[0].grade == 10);
             assert(entries[0].date == ts);
             assert(entries[0].course.GetId() == 0);
+        }
+        break;
+        case 4: {
+            //shcedule test
+        }
+        break;
+        case 5: {
+            Journal journal;
+            Schedule schedule;
+            UniversitySystem uniSystem(journal, schedule); 
+        }
+        break;
+        case 6: {
+        }
+        break;
+        case 7: {
         }
         break;
 

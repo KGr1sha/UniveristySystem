@@ -16,6 +16,7 @@ public:
     bool AddTeacher(size_t teacher_id);
     bool RemoveTeacher(size_t teacher_id);
     size_t GetId() const;
+    void SetId(size_t new_id);
 
 private:
     size_t id;
