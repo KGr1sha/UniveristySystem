@@ -41,8 +41,8 @@ struct std::hash<Timestamp> {
 
 struct ScheduleEntry {
     ScheduleEntryType type;
-    Teacher teacher;
-    Course course;
+    size_t teacher_id;
+    size_t course_id;
 };
 
 class Schedule {
